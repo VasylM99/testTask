@@ -7,7 +7,78 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header{
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: whitesmoke;
+}
+.header>ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.header>ul>li{
+  list-style: none;
+  color: whitesmoke;
+  margin: 30px;
+}
+.header>ul>li>a{
+  text-decoration: none;
+  color: white;
+}
+
+.header>ul>li>a:hover{
+  text-decoration: underline solid whitesmoke;
+}
+
+.input{
+  outline: none;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  width: 75%;
+  border: 0;
+}
+.textarea{
+  padding: 5px 10px;
+  outline: none;
+  width: 75%;
+  height: 100px;
+  border: 0;
+}
+.w-25 {
+  width: 25%;
+}
+.button {
+  border: 1px solid black;
+  padding: 5px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  outline: none;
+  font-family: roboto;
+  font-size: 16px;
+  height: 20px;
+  margin-right: 5px;
+}
+.button:last-child{
+  margin-right: 0;
+}
+button.button {
+  height: 32px;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.button[disabled] {
+  background-color: #606e7a;
+  color: black;
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
 }
